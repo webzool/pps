@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Processing 101</title>
+    <!--Bootstrap and Bootstrap VUE libraries-->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.4/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@2.1.0/dist/bootstrap-vue.css" type="text/css" />
+    <!--Swiper Slider Library-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <section id="home-main" class="bg-darkblue pb-5">
+        <div class="container">
+            <b-navbar toggleable="lg" type="dark" variant="transparent">
+                <b-navbar-brand href="#">LOGO</b-navbar-brand>
+
+                <!-- Right aligned nav items -->
+                <b-navbar-nav class="ml-auto">
+                    <b-navbar-toggle target="nav-collapse" class="ml-auto"></b-navbar-toggle>
+                    <b-collapse id="nav-collapse" is-nav>
+                        <b-navbar-nav>
+                            <b-nav-item href="#">Link</b-nav-item>
+                            <b-nav-item href="#" disabled>Disabled</b-nav-item>
+                        </b-navbar-nav>
+                    </b-collapse>
+                </b-navbar-nav>
+
+            </b-navbar>
+        </div>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h1 class="text-white d-block text-center pb-2 font-weight-bold">Find the best business partner</h1>
+                    <p class="text-white d-block text-center">Ridiculus sociosqu cursus neque cursus curae ante
+                        scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
+                </div>
+            </div>
+            <div class="row pt-3 pb-lg-5">
+                <div class="col-md-6 ml-auto mr-auto d-flex">
+                    <b-form id="filter-form" class="d-flex w-100">
+                        <label class="sr-only" for="inline-form-input-name">Name</label>
+                        <b-input id="inline-form-input-name"
+                            class="mb-sm-0 w-80 bg-transparent text-white border-radius-none border-0"
+                            placeholder="Type here...">
+                        </b-input>
+                        <b-button class="w-25 border-radius-none bg-buttonblue border-0" variant="primary">Search
+                        </b-button>
+                    </b-form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="overflow-hidden pt-5 pb-5">
+        <div class="container">
+            <div class="logos-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="mw-100 d-block m-auto" src="assets/images/ex1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="mw-100 d-block m-auto" src="assets/images/ex2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="mw-100 d-block m-auto" src="assets/images/ex2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-tabs-1" class="pt-5 pb-5">
+        <div class="container">
+            <div>
+                <b-tabs pills content-class="mt-4" nav-class="justify-content-center border-0 bg-lightblue">
+                    <b-tab title="Category 1" active>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button" href="#">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </b-tab>
+                    <b-tab title="Category 2">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button" href="#">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                                <a class="text-decoration-none text-dark" href="">
+                                    <div class="tab-box">
+                                        <div class="tab-box-layer d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h4 class="d-block text-center">Ctegory opo</h4>
+                                                <p class="d-block text-center">Ridiculus sociosqu cursus neque cursus
+                                                    curae
+                                                    ante
+                                                    scelerisque vehicula.Ridiculus sociosqu cursus neque cursus curae
+                                                    ante
+                                                    scelerisque vehicula.</p>
+                                                <div class="mini-button">Read More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </b-tab>
+                </b-tabs>
+            </div>
+        </div>
+    </section>
+    <section id="home-tabs-2" class="pt-5 pb-5 overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="position-relative">
+                <b-tabs vertical end content-class="col-lg-7 col-12"
+                    nav-wrapper-class="bg-darkblue pt-5 pb-5 pd-left-5 pr-lg-5 col-lg-5 col-12"
+                    active-nav-item-class="bg-transparent text-white">
+                    <b-tab active>
+                        <template v-slot:title>
+                            <div class="tab-title-area">
+                                <h3>Research</h3>
+                                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.Ridiculus
+                                    sociosqu
+                                    cursus neque cursus curae ante scelerisque vehicula.</p>
+                            </div>
+                        </template>
+                        <div class="tab-2-container">
+                            <div class="row">
+                                <div class="col-md-7 order-md-1 order-2">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It
+                                        has survived not Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry.Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book.It has survived not
+                                    </p>
+                                </div>
+                                <div class="col-md-5 order-md-2 order-1 my-auto">
+                                    <img class="mw-100 d-block m-auto" src="assets/images/tab-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </b-tab>
+                    <b-tab>
+                        <template v-slot:title>
+                            <div class="tab-title-area">
+                                <h3>Compare</h3>
+                                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.Ridiculus
+                                    sociosqu
+                                    cursus neque cursus curae ante scelerisque vehicula.</p>
+                            </div>
+                        </template>
+                        <div class="tab-2-container">
+                            <div class="row">
+                                <div class="col-md-7 order-md-1 order-2">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It
+                                        has survived not Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry.Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book.It has survived not
+                                    </p>
+                                </div>
+                                <div class="col-md-5 order-md-2 order-1 my-auto">
+                                    <img class="mw-100 d-block m-auto" src="assets/images/tab-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </b-tab>
+                    <b-tab>
+                        <template v-slot:title>
+                            <div class="tab-title-area">
+                                <h3>Choose</h3>
+                                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.Ridiculus
+                                    sociosqu
+                                    cursus neque cursus curae ante scelerisque vehicula.</p>
+                            </div>
+                        </template>
+                        <div class="tab-2-container">
+                            <div class="row">
+                                <div class="col-md-7 order-md-1 order-2">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It
+                                        has survived not Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry.Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book.It has survived not
+                                    </p>
+                                </div>
+                                <div class="col-md-5 order-md-2 order-1 my-auto">
+                                    <img class="mw-100 d-block m-auto" src="assets/images/tab-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </b-tab>
+                </b-tabs>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="post-outline">
+                        <a class="post-href" href="#">
+                            <div class="related-main-post p-5">
+                                <div class="related-post-image-area">
+                                    <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                </div>
+                                <div class="related-post-featured m-auto d-block">
+                                    <p class="font-weight-bold pt-2">We are opened now!</p>
+                                    <p>Today is our something day</p>
+                                    <small>3 days ago</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="post-href" href="#">
+                            <div class="related-main-post p-5">
+                                <div class="related-post-image-area">
+                                    <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                </div>
+                                <div class="related-post-featured m-auto d-block">
+                                    <p class="font-weight-bold pt-2">We are opened now!</p>
+                                    <p>Today is our something day</p>
+                                    <small>3 days ago</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="post-href" href="#">
+                                <div class="related-sec-post related-main-post pl-5 pr-5 pt-1 pb-1">
+                                    <div class="related-sec-image-area related-post-image-area">
+                                        <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                    </div>
+                                    <div class="related-post-featured m-auto d-block">
+                                        <p class="font-weight-bold pt-2">We are opened now!</p>
+                                        <p>Today is our something day</p>
+                                        <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="post-href" href="#">
+                                <div class="related-sec-post related-main-post pl-5 pr-5 pt-1 pb-1">
+                                    <div class="related-sec-image-area related-post-image-area">
+                                        <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                    </div>
+                                    <div class="related-post-featured m-auto d-block">
+                                        <p class="font-weight-bold pt-2">We are opened now!</p>
+                                        <p>Today is our something day</p>
+                                        <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 pt-5">
+                            <a class="post-href" href="#">
+                                <div class="related-sec-post related-main-post pl-5 pr-5 pt-1 pb-1">
+                                    <div class="related-sec-image-area related-post-image-area">
+                                        <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                    </div>
+                                    <div class="related-post-featured m-auto d-block">
+                                        <p class="font-weight-bold pt-2">We are opened now!</p>
+                                        <p>Today is our something day</p>
+                                        <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="post-href" href="#">
+                                <div class="related-sec-post related-main-post pl-5 pr-5 pt-1 pb-1">
+                                    <div class="related-sec-image-area related-post-image-area">
+                                        <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                    </div>
+                                    <div class="related-post-featured m-auto d-block">
+                                        <p class="font-weight-bold pt-2">We are opened now!</p>
+                                        <p>Today is our something day</p>
+                                        <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="post-href" href="#">
+                                <div class="related-sec-post related-main-post pl-5 pr-5 pt-1 pb-1">
+                                    <div class="related-sec-image-area related-post-image-area">
+                                        <img class="post-image" src="assets/images/animation_companies.jpg" />
+                                    </div>
+                                    <div class="related-post-featured m-auto d-block">
+                                        <p class="font-weight-bold pt-2">We are opened now!</p>
+                                        <p>Today is our something day</p>
+                                        <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="related-button" href="#">Read More</a>
+        </div>
+    </section>
+    <section class="cta-1">
+        <div class="cta-1-layer pt-5 pb-5 p-0">
+            <div class="container">
+                <h2 class="m-auto d-block text-center text-white p-2 font-weight-bold">Advice You Can Trust</h2>
+                <div class="row">
+                    <div class="col-md-3 pt-5 pb-5">
+                        <strong class="h2 font-weight-bold text-white d-block text-center">51365</strong>
+                        <p class="text-white d-block text-center">Lorem Ipsum ispim</p>
+                    </div>
+                    <div class="col-md-3 pt-5 pb-5">
+                        <strong class="h2 font-weight-bold text-white d-block text-center">51365</strong>
+                        <p class="text-white d-block text-center">Lorem Ipsum ispim</p>
+                    </div>
+                    <div class="col-md-3 pt-5 pb-5">
+                        <strong class="h2 font-weight-bold text-white d-block text-center">51365</strong>
+                        <p class="text-white d-block text-center">Lorem Ipsum ispim</p>
+                    </div>
+                    <div class="col-md-3 pt-5 pb-5">
+                        <strong class="h2 font-weight-bold text-white d-block text-center">51365</strong>
+                        <p class="text-white d-block text-center">Lorem Ipsum ispim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <ul class="list-unstyled p-3 mr-lg-5">
+                        <li class="pb-3"><strong>COMPANY</strong></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <ul class="list-unstyled p-3 mr-lg-5">
+                        <li class="pb-3"><strong>SERVICES</strong></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <ul class="list-unstyled p-3 mr-lg-5">
+                        <li class="pb-3"><strong>LEGAL</strong></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <ul class="list-unstyled p-3 mr-lg-5">
+                        <li class="pb-3"><strong>PAYMENT</strong></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                        <li><a class="text-decoration-none" href="#">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-0"></div>
+                <div class="col-lg-2 col-md-6 d-flex">
+                    <div class="p-3">
+                        <strong>CONTACT US</strong>
+                        <div class="d-flex pt-3">
+                            <a href="#"><img class="mr-3" src="assets/icon/fb.png" alt=""></a>
+                            <a href="#"><img class="mr-3" src="assets/icon/instagram.png" alt=""></a>
+                            <a href="#"><img class="mr-3" src="assets/icon/in.png" alt=""></a>
+                        </div>
+                        <strong class="d-block pt-3"><a href="#">+994556896563</a></strong>
+                        <strong class="d-block pt-3"><a href="#">info@payment.com</a></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--VUE.JS and Bootstrap-Vue JS libraries -->
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@2.1.0/dist/bootstrap-vue.min.js"></script>
+    <!--Swiper Slider JS Library-->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!--Custom JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
