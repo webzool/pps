@@ -430,6 +430,10 @@ footer a:hover {
         border-radius: 0;
     }
 
+    .logo-part {
+        border: none;
+    }
+
     .navbar-collapse .navbar-nav .nav-item .nav-link {
         color: #000;
     }
