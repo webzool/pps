@@ -102,6 +102,8 @@ strong {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+    max-height: 5vh;
+    padding: 0.1rem 1rem;
 }
 
 .form-button {
