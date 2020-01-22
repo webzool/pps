@@ -312,12 +312,12 @@ body {
 
 .detail-box ul {
     list-style: none;
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 1.5rem;
 }
 
 .detail-box ul li {
     font-weight: normal;
-    padding-bottom: 1.3rem;
+    padding-bottom: 0.5rem;
     position: relative;
 }
 
@@ -335,8 +335,7 @@ body {
     width: 2rem;
     height: 2rem;
     position: absolute;
-    left: -3rem;
-    top: -3px;
+    left: -2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,9 +343,15 @@ body {
     color: #4A4444;
 }
 
+.detail-box ul .active:before {
+    background: #00328A !important;
+    color: #fff;
+}
+
 .detail-box ul li a {
     text-decoration: none;
     color: #fff;
+    padding: 6px;
 }
 
 .item-info-box h3 {
