@@ -42,7 +42,7 @@ ul li {
 }
 
 .bg-buttonblue {
-    background: #0044BD;
+    background: #0044BD !important;
 }
 
 .color-buttonblue {

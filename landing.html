@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <section id="home-main" class="bg-buttonblue">
+    <section id="home-main">
         <div class="landing-layer pb-5">
             <div class="container-fluid">
-                <b-navbar toggleable="lg" type="dark" variant="transparent">
+                <b-navbar v-on-scroll="handleScroll" fixed="top" toggleable="lg" type="dark" variant="transparent">
                     <b-navbar-brand href="#"><img src="assets/logo-white.png" alt=""></b-navbar-brand>
 
                     <!-- Right aligned nav items -->
@@ -36,7 +36,7 @@
                 </b-navbar>
             </div>
             <div class="container pt-5 pb-5">
-                <div class="row pt-5">
+                <div class="row pt-5 mt-5">
                     <div class="col-lg-6 my-auto mb-3">
                         <h1 class="h2 text-white pb-2 font-weight-bold">Credit Card Processing, Easy as
                             1-2-3!</h1>
@@ -274,7 +274,7 @@
             </form>
         </div>
     </section>
-    <footer class="bg-footer pt-5 pb-5">
+    <footer class="bg-footer pt-4 pb-2">
         <div class="container">
             <p>Copyright 2020 (C) Payment Processing 101</p>
         </div>
@@ -285,6 +285,7 @@
     <!--Swiper Slider JS Library-->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!--Custom JS-->
+    <script src="assets/js/directive.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

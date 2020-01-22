@@ -7,6 +7,15 @@ new Vue({
         data: {
             name: ''
         },
+    },
+    methods: {
+        handleScroll: (event, el) => {
+            if (window.scrollY >= 10) {
+                el.classList.add('bg-buttonblue');
+            } else {
+                el.classList.remove('bg-buttonblue');
+            }
+        }
     }
 });
 
@@ -20,6 +29,7 @@ new Vue({
 new Vue({
     el: "#home-tabs-2",
 });
+
 
 
 //Swiper Slide Configurations
