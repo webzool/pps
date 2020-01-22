@@ -11,7 +11,8 @@ h6,
 p,
 span,
 a,
-strong {
+strong,
+ul li {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -46,6 +47,10 @@ strong {
 
 .color-buttonblue {
     color: #0044BD !important;
+}
+
+.color-filter {
+    color: #00328A;
 }
 
 .bg-bluefilter {
@@ -424,6 +429,10 @@ footer a:hover {
         background: #fff;
         padding: 1rem;
         z-index: 9999;
+    }
+
+    .navbar-brand img {
+        width: 100px;
     }
 
     #list-form {
